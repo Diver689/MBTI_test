@@ -3,6 +3,9 @@ import random
 import numpy as np
 import matplotlib.pyplot as plt
 
+# 关键修复：防止matplotlib崩溃
+plt.switch_backend('Agg')
+
 # 页面设置
 st.set_page_config(page_title="MBTI Personality Test", layout="wide")
 st.title("🧩 MBTI Personality Test")
